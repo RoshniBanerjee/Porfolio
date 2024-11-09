@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale =1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/361943343c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="LOGO">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Devoloper and Programmer</p>
+            <h2>Hi,I'm <span>Roshni</span><br>Banerjee</h2>
+        </div>
+    </div>
+     </div>
+<!------about------>    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/my photo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>I am a passionate and dedicated web developer and programmer, driven by a relentless curiosity for technology and a commitment to creating innovative digital solutions. With a strong foundation in both front-end and back-end development, I bring a versatile skill set to the table that allows me to tackle a wide range of projects   
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX<span><br>-> Proficient in crafting user-centric interfaces, wireframing, prototyping, and conducting usability tests.</li>
+                        <li><span>Problem Solving<span><br>-> Analytical thinker, adept at creative solutions in diverse scenarios.</li>
+                        <li><span>Web Devolopement<span><br>-> Full-stack proficiency, responsive design, API integration, performance optimization, database management.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Soon...</span><br>I have no formal work experience as of now</li>
+                            <li><span>But</span><br>I can't wait to leverage my skills to contribute to the ever-evolving field of computer science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2026</span><br>B.Tech in CSE Core from S.R.M University</li>
+                        <li><span>2020</span><br>DAV Model School</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------serives----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I Provide</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code fa-bounce"></i>
+                <h1>Web Development</h1>
+            <p>I provide end-to-end web solutions, including design, front-end/back-end development, e-commerce, performance optimization, maintenance, and custom applications. Tailored to your unique needs.</p>
+            <a href="https://youtu.be/xGmIl7QbBiA?feature=shared">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android fa-bounce" style="color: #ffffff;"></i>
+                <h2>App Development</h2>
+            <p>I possess strong expertise in app development, encompassing both mobile and web platforms, with a track record of delivering successful, user-friendly applications.</p>
+            <a href="https://youtu.be/qqzy1EEid0E?feature=shared">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-icons fa-bounce"></i>
+                <h2>UI/UX Designer</h2>
+                <p>I excel in UI/UX design, crafting visually captivating and user-friendly interfaces that elevate overall user satisfaction and interaction with digital products.</p>
+                <a href="https://youtu.be/zHAa-m16NGk?feature=shared">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>roshniba0420@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8293070374</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/roshni-banerjee-a6719b24b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Roshniba" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="my resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Manav.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>     
+</body>
+</html>
